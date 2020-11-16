@@ -1,0 +1,100 @@
+# Visão geral de um SIG {#intro}
+
+Há pelo menos três grandes maneiras de utilizar um SIG (Câmara e Queiroz, 2004 ):
+
+* como ferramenta para produção de mapas
+* como suporte para análise espacial de fenômenos
+* como um banco de dados geográficos, com funções de armazenamento e recuperação de informação espacial.
+
+A facilidade de trabalhar com a informação geográfica em ambiente SIG, seja na sua criação e edição, tornou o trabalho dos cartógrafos mais facilitada, constituindo uma importante ferramenta tanta na cartografia sistemática, quanto na cartografia temática. Com as ferramentas robustas de visualização, simbologia e layout, mapas tem sido produzidos tanto para saídas gráficas em meio digital e para impressão, com destaque para a criação de webmaps, onde os mapas são acessados via web interativamente com o usuário.
+
+O que torna o SIG um ambiente poderoso de trabalho em relação a pacotes dedicados a desenho (p.ex. CAD) é sua capacidade de análise espacial. Baseado em inúmeras ferramentas é possível cruzar, interpolar e agregar dados para se chegar novas informações, tendo a inferência geográfica como um grande campo a ser explorado. A disciplina de SIG-2 do nosso curso abordará em mais detalhe esse conteúdo.
+Por fim, e não menos importante, deve-se destacar a capacidade de trabalhar com SIG como um ambiente gerenciamento de banco de dados geográficos. Em tempos, onde há um volume considerável de informações, trabalhar com banco de dados é imprescindível, se for dados geográficos, um banco de dados geográficos é mais relevante ainda. Os softwares de SIG permitem gerenciar esses bancos de dados com funções de armazenamento e recuperação da informação que facilitam e muito quando trabalhamos com grande quantidade de dados.
+
+Por fim, e não menos importante, deve-se destacar a capacidade de trabalhar com SIG como um ambiente gerenciamento de banco de dados geográficos. Em tempos, onde há um volume considerável de informações, trabalhar com banco de dados é imprescindível, se for dados geográficos, um banco de dados geográficos é mais relevante ainda. Os softwares de SIG permitem gerenciar esses bancos de dados com funções de armazenamento e recuperação da informação que facilitam e muito quando trabalhamos com grande quantidade de dados.
+
+Nesse sentido, é possível indicar que as principais características de SIG são:
+
+* Inserir e integrar, numa única base de dados, informações espaciais provenientes de dados cartográficos, dados censitários e cadastro urbano e rural, imagens de satélite, redes e modelos numéricos de terreno (informações geográficas).
+
+
+**Componentes de um SIG**
+
+Os clássicos componentes SIG são formados por cinco componentes, todos inter-relacionados entre si, sendo eles: Recursos humanos, dados, software, hardware e análises.
+
+**Hardware**
+
+Tradicionalmente, o hardware se limitava ao microcomputador onde o usuário interagia com as operações SIG, nisso incluía todas suas parte como o CPU, teclado, monitor, mouse e até acessórios extras como mesa digitalizadora, scanner, impressora, etc, mas atualmente isso é muito mais amplo. Laptops, tablets e smarphones, por exemplo vem sendo utilizados dentro do contexto de SIG.
+
+**Software**
+
+Outra peça dos componentes SIG é o software. Muitas pessoas associam o SIG diretamente ao software, mas o mais correto é dizer software (ou aplicativo) de SIG. Consistem nos programas computacionais em que de fato serão utilizados para manipular os dados no intuito de produzir informações geográficas. No geral esses programas são robustos e possuem inúmeras ferramentas para exibição dos dados e informações geográficas, ferramentas para realizar edição, reprojeção e cruzamento dos dados geográficos, entre outras.
+
+De acordo com Longley et al (2013), os softwares de SIG podem ser divididos nos seguintes tipos:
+
+* Desktop
+* Mapeamento na Web
+* Servidor
+* Globo Virtual
+* Para desenvolvedores
+* Portátil
+* Outros
+
+**Dados**
+Em SIG é possível trabalhar tanto com dados geográficos, quanto com dados alfanuméricos. De modo genérico, os dados podem ser classificados em: espaciais e não espaciais
+
+(...)
+
+**Análise**
+
+Dentre as diversas funções analíticas que o SIG pode executar, podemos agrupar em:
+•	Gerenciamento do Banco de dados geográficos
+•	Análise espacial;
+•	Topologia;
+•	Processamento de imagens;
+•	Análise digital do terreno;
+•	Visualização/Plotagem.
+
+**Recursos humanos**
+
+Para fazer o SIG funcionar é essencial que pessoas operem. E qual seria o perfil dos profissionais de geotecnologias?
+* Formação contínua (cursos, eventos, leitura, etc);
+*Rede de contatos e bom relacionamento pessoal (inclui colegas da universidade, trabalho e professores);
+* Colaboração;
+* Conhecimento em mais de um software;
+* Conhecimento em alguma linguagem de programação é um diferencial (ex.: Python, R).
+
+
+
+
+```{myblock}
+This text will appear styled different (for example)
+```
+
+
+>**SIG vs CAD
+
+>Oferecer mecanismos para combinar as várias informações, através de algoritmos de manipulação e análise, bem como para consultar, recuperar, visualizar e plotar o conteúdo da base de dados georreferenciados (Câmara e Queiroz, 2004).
+
+
+
+
+You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
+
+Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
+
+```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
+par(mar = c(4, 4, .1, .1))
+plot(pressure, type = 'b', pch = 19)
+```
+
+Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
+
+```{r nice-tab, tidy=FALSE}
+knitr::kable(
+  head(iris, 20), caption = 'Here is a nice table!',
+  booktabs = TRUE
+)
+```
+
+You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
